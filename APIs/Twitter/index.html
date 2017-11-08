@@ -27,6 +27,12 @@
         dataType:'jsonp',
         success:function(data){
           console.dir(data);
+
+          for(item in data['result']){
+            $('#tweets').append(
+              '<li>' + data['results'][item]['text'] + '</li>');
+            )
+          }
         }
       })
     }
@@ -36,9 +42,6 @@
 <body>
   <h1>NEW TWEETS</h1>
   <ol id="tweets">
-    <li>fake tweet 1</li>
-    <li>fake tweet 2</li>
-  </ol>
   <a href="#" id="submit">get tweets</a>
 </body>
 
