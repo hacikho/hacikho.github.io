@@ -201,8 +201,8 @@ span.answer {
 }
 
 img.icon {
-  width: 65px;
-  height: 65px;
+  width: 100px;
+  height: 60px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
